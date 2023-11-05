@@ -18,3 +18,4 @@ pip install -r requirements.txt
 # Check current dependencies
 pip freeze
 echo "Virtual environment $ENV_NAME is set and active."
+nvidia-smi
