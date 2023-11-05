@@ -1,8 +1,8 @@
 # Program engineering 1
 ----
 team:
-- Ishmitov D.R
-- Muravied A.V.
+- Ishmitov D.R (dmitr2ish, frog4work)
+- Muraviev A.V. (Alex-mur)
 ----
 ## How to run
 
