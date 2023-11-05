@@ -1,0 +1,15 @@
+transformers
+sentencepiece
+sacremoses
+torch
+filelock
+huggingface-hub
+numpy
+packaging
+pyyaml
+regex
+requests
+tokenizers
+tqdm
+safetensors
+tensorflow
