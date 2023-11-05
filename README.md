@@ -17,14 +17,19 @@ _for example:_
 - Description of project
   - **ishmitov**
     - **Technical requirements**
-      - about __Gb of storage space
+      - about 5Gb of storage space
+      - Linux/Mac os (CUDA, ARM)
     - **Overview**
-       - Text to video application based on [damo-vilab/modelscope-damo-text-to-video-synthesis](https://huggingface.co/damo-vilab/modelscope-damo-text-to-video-synthesis) model
+       - Russian or english text to picture based on two models:
+         - [runwayml/stable-diffusion-v1-5](https://huggingface.co/runwayml/stable-diffusion-v1-5) - for creation pictures
+         - [Helsinki-NLP/opus-mt-ru-en](https://huggingface.co/Helsinki-NLP/opus-mt-ru-en) - for translation prompt from russian to english
     - **How is it work**
-      - write your question to the app in cli, for example "Chihuahua climbs to Everest"
-      - wait then application produce you link to the video
-      - check the video by the link
+      - write your prompt to the cli, for example "Chihuahua is climbing the Everest" or in Russian "Чихухуа карабкается на Эверест"
+      - wait then application produce you path to the picture
+      - check the picture by the link
+      ![1699212331302.png](1699212331302.png)
       - keep going until you get bored
+      ![1699212451343.png](1699212451343.png)
       - write 'exit' and application will have completed
   - **muraviev**
     - text
