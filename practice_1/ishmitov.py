@@ -11,12 +11,18 @@
 #         print(translator(user_text)[0]['translation_text'])
 #     except Exception as ex:
 #         print(format("Найдена ошибочка {}, ничего страшного продолжайте работу", ex))
+from diffusers import DiffusionPipeline
+import torch
+from datetime import datetime
 
-from modelscope.pipelines import pipeline
-from modelscope.outputs import OutputKeys
-p = pipeline('text-to-video-synthesis', 'damo/text-to-video-synthesis')
-test_text = {
-        'text': 'A panda eating bamboo on a rock.',
-    }
-output_video_path = p(test_text,)[OutputKeys.OUTPUT_VIDEO]
-print('output_video_path:', output_video_path)
+pipe = DiffusionPipeline.from_pretrained("runwayml/stable-diffusion-v1-5")
+pipe.enable_attention_slicing()
+if not torch.cuda.is_available():
+    pipe = pipe.to("mps")
+prompt = "a photo of an astronaut riding a horse on mars"
+image = pipe(prompt).images[0]
+current_timestamp_ms = str(round(datetime.now().timestamp() * 1000))
+print(current_timestamp_ms)
+path = "./practice_1/picture_out/" + current_timestamp_ms + ".png"
+image.save(path)
+print("Картинка сохранена по пути: ", path)
