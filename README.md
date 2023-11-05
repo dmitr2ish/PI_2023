@@ -27,9 +27,9 @@ _for example:_
       - write your prompt to the cli, for example "Chihuahua is climbing the Everest" or in Russian "Чихухуа карабкается на Эверест"
       - wait then application produce you path to the picture
       - check the picture by the link
-      ![1699212331302.png](1699212331302.png)
+        - <img alt="1699212331302.png" height="200" src="1699212331302.png" width="200"/>
       - keep going until you get bored
-      ![1699212451343.png](1699212451343.png)
+        - <img alt="1699212451343.png" height="200" src="1699212451343.png" width="200"/>
       - write 'exit' and application will have completed
   - **muraviev**
     - text
