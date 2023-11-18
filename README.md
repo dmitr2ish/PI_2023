@@ -1,8 +1,9 @@
 # Program engineering 1
 ----
 team:
-- Ishmitov D.R (dmitr2ish, frog4work)
-- Muraviev A.V. (Alex-mur)
+- Ishmitov D.R
+  - user dmitr2ish
+  - user frog4work
 ----
 ## How to run
 
@@ -31,5 +32,3 @@ _for example:_
       - keep going until you get bored
         - <img alt="1699212451343.png" height="200" src="1699212451343.png" width="200"/>
       - write 'exit' and application will have completed
-  - **muraviev**
-    - text
